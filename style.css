@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Meows-font";
+  src: url(/QUIZ-App/FONTS/Meows-font.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 5px;
+  padding: 10px;
+  background-color: rgb(53, 0, 53);
+  border: 5px solid tomato;
+  border-radius: 20%;
+  font-family: "Meows-font", sans-serif;
+  color: rgb(161, 12, 161);
+  text-align: center;
+}
+
+h3 {
+  font-family: "Meows-font", sans-serif;
+  color: rgb(161, 12, 161);
+  text-align: center;
+}
+
+.path {
+  width: 100vw;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 95vw;
+  height: 90vh;
+  border: 2px dotted tomato;
+  border-radius: 5%;
+}
+
+.title {
+  border-bottom: 2px dotted tomato;
+  width: 100%;
+  height: 4%;
+  text-align: center;
+  font-family: "Meows-font", sans-serif;
+}
+
+.item1,
+.item2,
+.item3 {
+  display: flex;
+  position: relative;
+  color: rgb(73, 1, 73);
+  border: 2px double rgb(255, 0, 255);
+  width: 100%;
+  height: 25%;
+  margin: 15px;
+  text-align: center;
+}
+
+button {
+  position: absolute;
+  right: 83px;
+  bottom: 13px;
+  border: 1px solid blueviolet;
+  flex-direction: column;
+  background-color: rgb(184, 0, 184);
+  border-radius: 20%;
+  font-size: 15px;
+  color: rgb(255, 128, 105);
+}
+
+div.tags {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-left: 2px dotted rgb(255, 0, 255);
+}
+
+.tags {
+  display: flex;
+  position: relative;
+  color: blueviolet;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  height: 70px;
+  background-color: rgb(53, 0, 53);
+  border: 5px solid tomato;
+  border-radius: 20%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: center;
+}
+
+.tags p {
+  border-top: 2px dotted rgb(255, 0, 255);
+}
+
+.bkmrk {
+  position: absolute;
+  top: -17px;
+  right: -12px;
+  font-size: x-large;
+}
