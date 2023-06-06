@@ -11,7 +11,7 @@
     ></script>
     <title>🐾BOOKMARKS</title>
 </head>
-<body>
+<body data-js="body">
     <header>
         <h1>
           BOOKMARKS
@@ -29,13 +29,16 @@
                   src="https://bixbipet.com/wp-content/uploads/purr_maine_coon_img1.jpg"
                   alt="Maine coon"
                 />
+                <div>
                 <p>
                   This breed is know for it's large size, growing to about 16 inches
                   tall and 40 inches long from nose to tail. Which breed is it?
                 </p>
-                <button type="button">Show answer</button>
+                <button type="button" class="button" onclick="toggleAnswer(this)">Show answer</button>
+                <p class="answer hidden">Maine coon</p>
+                </div>
                 <div class="tags">
-                  <div class="bkmrk"> <i class="fa-solid fa-paw fa-xl" style="color: rgb(161, 12, 161)"></i></div>
+                  <div class="bkmrk"> <i class="fa-solid fa-paw fa-xl" data-js="bkmrk" onclick="toggleBookmarkColor(this)"></i></div>
                   <p>#meow</p>
                   <p>#pets</p>
                   <p>#cat</p>
@@ -48,13 +51,16 @@
                 src="https://e1.pxfuel.com/desktop-wallpaper/863/495/desktop-wallpaper-16-abyssinian-cat-ideas-abyssinian.jpg"
                 alt="Abyssinian"
                 />
+                <div>
                 <p>
                   Known for their elegant body, short hair, and intelligence. They’re
                   also one of the oldest known breeds Which breed is it?
                 </p>
-                <button type="button">Show answer</button>
+                <button type="button" class="button" onclick="toggleAnswer(this)">Show answer</button>
+                <p class="answer hidden">Abyssinian</p>
+              </div>
                 <div class="tags">
-                  <div class="bkmrk"> <i class="fa-solid fa-paw fa-xl" style="color: rgb(161, 12, 161)"></i></div>
+                  <div class="bkmrk"> <i class="fa-solid fa-paw fa-xl" data-js="bkmrk" onclick="toggleBookmarkColor(this)"></i></div>
                   <p>#meow</p>
                   <p>#pets</p>
                   <p>#cat</p>
@@ -73,23 +79,30 @@
 <footer>
     <nav>
     <div>
-     <a href="/QUIZ-App/index.html">
+     <a href="/QUIZ-App/index.html" aria-label="link to home page">
       <i class="fa-solid fa-cat fa-xl" style="color: rgb(161, 12, 161)">
       </i></a>
     <p><h3> HOME </h3></p>
   </div>
     <div>
-     <a href="/QUIZ-App/bookmarks.html">
+     <a href="/QUIZ-App/bookmarks.html" aria-label="link to bookmarks page">
       <i class="fa-solid fa-paw fa-xl" style="color: rgb(161, 12, 161)">
     </i></a>
     <p><h3> BOOKMARKS </h3></p>
   </div>
+  <div>
+    <a href="./form.html" aria-label="link to form page">
+     <i class="fa-solid fa-file fa-xl" style="color: rgb(161, 12, 161)">
+     </i></a>
+   <p><h3> FORM </h3></p>
+ </div>
     <div>
-     <a href="/QUIZ-App/profile.html">
+     <a href="/QUIZ-App/profile.html" aria-label="link to profile page">
       <i class="fa-sharp fa-solid fa-shield-cat fa-xl" style="color: rgb(161, 12, 161)">
       </i></a>
     <p><h3> PROFILE </h3></p>
   </div>
     </nav>
   </footer>
-</html>
+  </html>
+  <script src="/QUIZ-App/index.js"></script>

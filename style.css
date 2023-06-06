@@ -14,7 +14,7 @@ h1 {
   padding: 10px;
   background-color: rgb(53, 0, 53);
   border: 5px solid tomato;
-  border-radius: 20%;
+  border-radius: 20px;
   font-family: "Meows-font", sans-serif;
   color: rgb(161, 12, 161);
   text-align: center;
@@ -27,7 +27,21 @@ h3 {
 }
 
 .path {
-  width: 100vw;
+  width: 100%;
+}
+
+body {
+  transition: 0.4s ease;
+  display: flex;
+  max-width: 500px;
+  min-width: 300px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.dark {
+  background-color: rgb(40, 40, 40);
 }
 
 .box {
@@ -38,7 +52,7 @@ h3 {
   width: 95vw;
   height: 90vh;
   border: 2px dotted tomato;
-  border-radius: 5%;
+  border-radius: 15px;
   background-color: rgb(255, 253, 230);
 }
 
@@ -50,7 +64,7 @@ h3 {
   width: 95vw;
   height: 600px;
   border: 2px dotted tomato;
-  border-radius: 5%;
+  border-radius: 15px;
   background-color: rgb(255, 253, 230);
 }
 
@@ -63,8 +77,58 @@ h3 {
   width: 95vw;
   height: 500px;
   border: 2px dotted tomato;
-  border-radius: 5%;
+  border-radius: 15px;
   background-color: rgb(255, 253, 230);
+}
+
+.boxform {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 95vw;
+  height: auto;
+  border: 2px dotted tomato;
+  border-radius: 15px;
+  background-color: rgb(255, 253, 230);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.question {
+  font-family: "Meows-font", sans-serif;
+  color: rgb(161, 12, 161);
+  text-align: center;
+  justify-self: center;
+}
+
+.answer {
+  font-family: "Meows-font", sans-serif;
+  color: rgb(161, 12, 161);
+  text-align: center;
+  justify-self: center;
+}
+
+.tags {
+  font-family: "Meows-font", sans-serif;
+  color: rgb(161, 12, 161);
+  justify-content: center;
+}
+
+.submitButton {
+  margin: 5px;
+  border: 1px solid blueviolet;
+  background-color: rgb(184, 0, 184);
+  border-radius: 7px;
+  font-size: 15px;
+  color: rgb(255, 128, 105);
 }
 
 .name {
@@ -74,6 +138,16 @@ h3 {
   top: 5%;
   font-family: "Meows-font", sans-serif;
   font-size: xx-large;
+  color: purple;
+}
+
+.dark-mode-button {
+  position: absolute;
+  text-align: center;
+  font-size: small;
+  right: 8%;
+  top: 30%;
+  font-family: "Meows-font", sans-serif;
   color: purple;
 }
 
@@ -94,6 +168,7 @@ h3 {
 }
 
 .title {
+  padding-bottom: 30px;
   border-bottom: 2px dotted tomato;
   width: 100%;
   height: 4%;
@@ -114,16 +189,24 @@ h3 {
   text-align: center;
 }
 
-button {
+.button {
   position: absolute;
   right: 83px;
   bottom: 13px;
   border: 1px solid blueviolet;
   flex-direction: column;
   background-color: rgb(184, 0, 184);
-  border-radius: 20%;
+  border-radius: 7px;
   font-size: 15px;
   color: rgb(255, 128, 105);
+}
+
+.hidden {
+  display: none;
+}
+
+p.answer {
+  padding-top: 20px;
 }
 
 div.tags {
@@ -147,7 +230,8 @@ footer {
   height: 70px;
   background-color: rgb(53, 0, 53);
   border: 5px solid tomato;
-  border-radius: 20%;
+  border-radius: 20px;
+  width: 100%;
 }
 
 nav {
@@ -167,6 +251,15 @@ nav {
   top: -17px;
   right: -12px;
   font-size: x-large;
+  color: rgb(161, 12, 161);
+}
+
+.bkmrk-dark {
+  color: rgb(40, 40, 40);
+  transition: 0.3s;
+  top: -17px;
+  right: -12px;
+  font-size: x-large;
 }
 
 .img {
@@ -174,4 +267,12 @@ nav {
   border: 4px solid tomato;
   border-radius: 50%;
   margin: 4px;
+}
+
+@media screen and (min-width: 400px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+  }
 }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/QUIZ-App/style.css" />
+    <script
+      src="https://kit.fontawesome.com/b92603ca40.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>🐾Form</title>
+</head>
+<body>
+    <header>
+        <h1>
+          FORM
+        </h1>
+          <img
+            src="https://t4.ftcdn.net/jpg/03/30/58/13/360_F_330581305_OgtXWOCiL5QcR5c56GXWpMdMqdbxqOE4.jpg"
+            alt="path"
+            class="path"
+          />
+      </header>
+      <div class="boxform" data-js="boxform">
+        <div class="title"><h3> Form🐾 </h3></div>
+        <form class="form" data-js="form">
+              <div class="question">
+                <div>
+                    <label for="question"><h3>Your question:</h3></label>
+                </div>
+              <textarea class="form-container" type="text" name="question" id="question" data-js="question" cols="30" rows="10" maxlength="150"></textarea>
+             <div>
+                <small class="form__character-count"><span data-js="amountLeft">150</span> characters left</small>
+            </div>
+        </div>
+        <div class="answer">
+            <div>
+                <label for="answer"><h3>Your answer:</h3></label>
+            </div>
+            <textarea class="form-container" type="text" name="answer" id="answer" data-js="answer" cols="30" rows="10" maxlength="150"></textarea>
+            <div>
+               <small class="form__character-count"><span data-js="amountLeft">150</span> characters left</small>
+           </div>
+        </div>
+        <div>
+            <div>
+            <label for="tags" class="tags"><h3>Tags:</h3></label>
+        </div>
+            <input type="text" name="tags" id="tags" data-js="tags">
+        </div>
+              <button type="submit" name="button" class="submitButton">Submit</button>
+            </form>
+            <ul data-js="newCard"></ul>
+      </div>
+      <footer>
+        <nav>
+        <div>
+         <a href="./index.html" aria-label="link to home page">
+          <i class="fa-solid fa-cat fa-xl" style="color: rgb(161, 12, 161)">
+          </i></a>
+        <p><h3> HOME </h3></p>
+      </div>
+        <div>
+         <a href="./bookmarks.html" aria-label="link to bookmarks page">
+          <i class="fa-solid fa-paw fa-xl" style="color: rgb(161, 12, 161)">
+        </i></a>
+        <p><h3> BOOKMARKS </h3></p>
+      </div>
+      <div>
+       <a href="./form.html" aria-label="link to form page">
+        <i class="fa-solid fa-file fa-xl" style="color: rgb(161, 12, 161)">
+        </i></a>
+      <p><h3> FORM </h3></p>
+    </div>
+        <div>
+         <a href="./profile.html" aria-label="link to profile page">
+          <i class="fa-sharp fa-solid fa-shield-cat fa-xl" style="color: rgb(161, 12, 161)">
+          </i></a>
+        <p><h3> PROFILE </h3></p>
+      </div>
+        </nav>
+      </footer>
+      <script src="./form.js"></script>
+</body>
+</html>

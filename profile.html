@@ -11,18 +11,19 @@
     ></script>
     <title>🐾PROFILE</title>
 </head>
-<body>
+<body data-js="body">
     <header>
         <h1>
           PROFILE
         </h1>
        
-        </header>
+      </header>
         <div class="boxprof">
             <img src="/IMAGES/moon.png" alt="moon" style="width: 130px;" class="img">
             <div class="name">
                 <p>Samael Szep</p>
             </div>
+          <div class="dark-mode-button" data-js="dmbutton">DARK MODE <i class="fa-solid fa-moon fa-2xl" style="color: rgb(161, 12, 161);"></i></div>
             <div class="abtme">
                 <p>ABOUT ME:</p>
             </div>
@@ -35,19 +36,25 @@
 <footer>
     <nav>
     <div>
-        <a href="/QUIZ-App/index.html">
+        <a href="/QUIZ-App/index.html" aria-label="link to home page">
       <i class="fa-solid fa-cat fa-xl" style="color: rgb(161, 12, 161)">
       </i></a>
     <p><h3> HOME </h3></p>
   </div>
     <div>
-     <a href="/QUIZ-App/bookmarks.html">
+     <a href="/QUIZ-App/bookmarks.html" aria-label="link to bookmarks page">
       <i class="fa-solid fa-paw fa-xl" style="color: rgb(161, 12, 161)">
     </i></a>
     <p><h3> BOOKMARKS </h3></p>
   </div>
+  <div>
+    <a href="./form.html" aria-label="link to form page">
+     <i class="fa-solid fa-file fa-xl" style="color: rgb(161, 12, 161)">
+     </i></a>
+   <p><h3> FORM </h3></p>
+ </div>
     <div>
-     <a href="/QUIZ-App/profile.html">
+     <a href="/QUIZ-App/profile.html" aria-label="link to profile page">
       <i class="fa-sharp fa-solid fa-shield-cat fa-xl" style="color: rgb(161, 12, 161)">
       </i></a>
     <p><h3> PROFILE </h3></p>
@@ -55,4 +62,5 @@
     </nav>
     
   </footer>
-</html>
+  </html>
+  <script src="/QUIZ-App/index.js"></script>
